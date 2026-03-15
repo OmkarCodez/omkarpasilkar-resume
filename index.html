@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Omkar Pasilkar – Certified ISTQB® CTFL Senior Software Tester with 7+ years of QA experience." />
+  <title>Omkar Pasilkar | Senior QA Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=JetBrains+Mono:wght@300;400;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/chatbot.css" />
+</head>
+<body>
+
+  <!-- ░░ SCANLINES ░░ -->
+  <div class="scanlines" aria-hidden="true"></div>
+
+  <!-- ░░ BUG LAYER ░░ -->
+  <canvas id="bug-canvas" aria-hidden="true"></canvas>
+
+  <!-- ░░ CURSOR GLOW ░░ -->
+  <div id="cursor-glow" aria-hidden="true"></div>
+
+  <!-- ░░ KILL COUNTER ░░ -->
+  <div class="kill-hud" aria-label="Bugs squashed counter">
+    <span class="kill-label">BUGS_SQUASHED</span>
+    <span class="kill-num" id="kill-count">000</span>
+  </div>
+
+  <!-- ░░ NAV ░░ -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a class="nav-brand" href="#hero">OP<span>://</span>QA</a>
+      <ul class="nav-links">
+        <li><a href="#experience">EXP</a></li>
+        <li><a href="#skills">SKILLS</a></li>
+        <li><a href="#certs">CERTS</a></li>
+        <li><a href="#education">EDU</a></li>
+        <li><a href="#profile">PROFILE</a></li>
+      </ul>
+      <div class="nav-status"><span class="status-dot"></span>AVAILABLE</div>
+    </div>
+  </nav>
+
+  <!-- ░░░░░░░░░░ HERO ░░░░░░░░░░ -->
+  <section id="hero">
+    <canvas id="particle-canvas" aria-hidden="true"></canvas>
+    <div class="hero-hex-grid" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <div class="hero-eyebrow">
+        <span class="eyebrow-line"></span>
+        <span>CERTIFIED ISTQB® CTFL</span>
+        <span class="eyebrow-line"></span>
+      </div>
+
+      <h1 class="hero-name">
+        <span class="name-line" data-aos="fade-up">OMKAR</span>
+        <span class="name-line accent" data-aos="fade-up" data-delay="100">PASILKAR</span>
+      </h1>
+
+      <p class="hero-role">Senior Software Tester <span class="role-sep">|</span> QA Engineer</p>
+
+      <p class="hero-tagline">7+ Years hunting bugs before they hunt you.</p>
+
+      <div class="hero-chips">
+        <span class="chip">Manual &amp; Automation</span>
+        <span class="chip">Ecommerce</span>
+        <span class="chip">Capital Markets</span>
+        <span class="chip">Agile / Scrum</span>
+      </div>
+
+      <div class="hero-contact-row">
+        <a class="contact-pill" href="mailto:pasilkaromkar@gmail.com">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+          pasilkaromkar@gmail.com
+        </a>
+        <span class="contact-pill">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.15 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.06 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 16.92z"/></svg>
+          +91-9833104033
+        </span>
+        <span class="contact-pill">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+          Goregaon W, Mumbai
+        </span>
+      </div>
+
+      <div class="hero-stats-row">
+        <div class="hstat">
+          <span class="hstat-n" data-target="7">0</span><span class="hstat-plus">+</span>
+          <span class="hstat-l">Years Exp.</span>
+        </div>
+        <div class="hstat-divider"></div>
+        <div class="hstat">
+          <span class="hstat-n" data-target="3">0</span>
+          <span class="hstat-l">Certifications</span>
+        </div>
+        <div class="hstat-divider"></div>
+        <div class="hstat">
+          <span class="hstat-n" data-target="6">0</span><span class="hstat-plus">+</span>
+          <span class="hstat-l">Projects</span>
+        </div>
+        <div class="hstat-divider"></div>
+        <div class="hstat">
+          <span class="hstat-n" data-target="15">0</span><span class="hstat-plus">+</span>
+          <span class="hstat-l">Tools</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-cue">
+      <div class="scroll-wheel"><div class="scroll-thumb"></div></div>
+      <span>scroll</span>
+    </div>
+  </section>
+
+  <!-- ░░░░░░░░░░ EXPERIENCE ░░░░░░░░░░ -->
+  <section class="content-section" id="experience">
+    <div class="sec-head reveal">
+      <span class="sec-num">01</span>
+      <h2 class="sec-title">Experience</h2>
+      <span class="sec-rule"></span>
+    </div>
+
+    <div class="timeline">
+
+      <!-- Card 1 -->
+      <article class="exp-card reveal">
+        <div class="exp-marker">
+          <div class="exp-dot"></div>
+          <div class="exp-line"></div>
+        </div>
+        <div class="exp-body">
+          <div class="exp-top">
+            <div>
+              <p class="exp-company">63 Moons Technologies &nbsp;·&nbsp; Synapsewave Innovation Pvt. Ltd</p>
+              <h3 class="exp-role">Senior Software Auditor <span class="plus-tag">+ Deployment Associate</span></h3>
+              <p class="exp-proj">▸ Advance Risk Management System (ARMS)</p>
+            </div>
+            <div class="exp-meta-col">
+              <span class="exp-badge">SEPT 2020 – PRESENT</span>
+              <span class="exp-plat">Web &amp; Desktop</span>
+            </div>
+          </div>
+          <ul class="exp-bullets">
+            <li>Deep expertise in ARMS order-flow architecture — MTM, TimerSQ-Off, SPAN/Hedge/Spread/NOV Benefits, Option/Holding CFS and collateral.</li>
+            <li>Led daily standups and dynamically assigned tasks per PMT priority; drove sprint planning and grooming with testing estimates.</li>
+            <li>Architected full ARMS test beds from scratch on Windows &amp; Linux; performed database validation and backups.</li>
+            <li>Designed and executed functional, regression, smoke &amp; sanity suites; conducted API testing for backend integrations.</li>
+            <li>Performed static testing; reviewed test criteria and requirements with BA/DT teams.</li>
+            <li>Logged, tracked and triaged defects by severity/priority; collaborated with devs for timely resolution.</li>
+            <li>Planned end-to-end release activities — TDP documentation, deployment coordination and smooth delivery.</li>
+          </ul>
+          <div class="exp-tags">
+            <span>JIRA</span><span>X-ray</span><span>Linux</span><span>ARMS</span><span>API Testing</span><span>Agile</span><span>Kafka</span><span>Redis</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="exp-card reveal">
+        <div class="exp-marker">
+          <div class="exp-dot"></div>
+          <div class="exp-line"></div>
+        </div>
+        <div class="exp-body">
+          <div class="exp-top">
+            <div>
+              <p class="exp-company">63 Moons Technologies</p>
+              <h3 class="exp-role">Software Auditor</h3>
+              <p class="exp-proj">▸ Atom Payment Gateway (AI ChatBot) &nbsp;&amp;&nbsp; ICT Secure Connect</p>
+            </div>
+            <div class="exp-meta-col">
+              <span class="exp-badge">MAR 2020 – SEP 2020</span>
+              <span class="exp-plat">Web + Android &amp; iOS</span>
+            </div>
+          </div>
+          <ul class="exp-bullets">
+            <li>Created and updated test scenarios based on review feedback and evolving requirements.</li>
+            <li>Executed test cases, reported defects and verified fixes through retesting and closure cycles.</li>
+            <li>Collaborated with BA/DT teams post-static testing to align on updated requirements.</li>
+            <li>Performed smoke and sanity testing to validate stability before beta releases.</li>
+            <li>Tested AI chatbot functionality across multiple browsers for extended cross-browser coverage.</li>
+            <li>Configured and maintained test environments and test beds on Windows and Linux.</li>
+          </ul>
+          <div class="exp-tags">
+            <span>Postman</span><span>Android</span><span>iOS</span><span>Smoke Testing</span><span>Confluence</span><span>Zendesk</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="exp-card reveal">
+        <div class="exp-marker">
+          <div class="exp-dot"></div>
+        </div>
+        <div class="exp-body">
+          <div class="exp-top">
+            <div>
+              <p class="exp-company">63 Moons Technologies</p>
+              <h3 class="exp-role">Jr. Software Auditor</h3>
+              <p class="exp-proj">▸ Vannya — Your Digital Bird Guide</p>
+            </div>
+            <div class="exp-meta-col">
+              <span class="exp-badge">SEP 2018 – SEP 2020</span>
+              <span class="exp-plat">Web + Android &amp; iOS</span>
+            </div>
+          </div>
+          <ul class="exp-bullets">
+            <li>Handled test scenario creation, test case writing, execution and bug verification for newly updated features.</li>
+            <li>Performed SAT execution, retesting, regression and defect closure activities.</li>
+            <li>Configured test environments and created testbeds on both Windows and Linux platforms.</li>
+            <li>Performed database activities including DB Backup and Restore procedures.</li>
+          </ul>
+          <div class="exp-tags">
+            <span>StarTeam</span><span>MySQL</span><span>Regression</span><span>DB Backup</span><span>Linux</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ░░░░░░░░░░ SKILLS ░░░░░░░░░░ -->
+  <section class="content-section alt-bg" id="skills">
+    <div class="sec-head reveal">
+      <span class="sec-num">02</span>
+      <h2 class="sec-title">Technical Skills</h2>
+      <span class="sec-rule"></span>
+    </div>
+
+    <div class="skills-grid">
+
+      <div class="skill-card reveal">
+        <div class="skill-icon">⚡</div>
+        <h4>Testing Types</h4>
+        <div class="skill-pills">
+          <span>Functional</span><span>Regression</span><span>Smoke</span><span>Sanity</span><span>API</span><span>Database</span><span>UAT</span><span>Static</span><span>Integration</span>
+        </div>
+        <div class="skill-meter"><div class="skill-fill" data-pct="92"></div></div>
+      </div>
+
+      <div class="skill-card reveal">
+        <div class="skill-icon">🤖</div>
+        <h4>Automation &amp; API</h4>
+        <div class="skill-pills">
+          <span>Selenium (Python)</span><span>Postman</span><span>REST API</span>
+        </div>
+        <div class="skill-meter"><div class="skill-fill" data-pct="78"></div></div>
+      </div>
+
+      <div class="skill-card reveal">
+        <div class="skill-icon">🗄️</div>
+        <h4>Databases</h4>
+        <div class="skill-pills">
+          <span>MySQL</span><span>MSSQL</span><span>Redis</span><span>DB Backup</span><span>DB Restore</span><span>DB Validation</span>
+        </div>
+        <div class="skill-meter"><div class="skill-fill" data-pct="82"></div></div>
+      </div>
+
+      <div class="skill-card reveal">
+        <div class="skill-icon">🖥️</div>
+        <h4>OS &amp; Scripting</h4>
+        <div class="skill-pills">
+          <span>Linux CLI</span><span>Bash Scripting</span><span>Windows</span><span>MobaXterm</span><span>PuTTY</span><span>WinSCP</span><span>Xrdp</span>
+        </div>
+        <div class="skill-meter"><div class="skill-fill" data-pct="80"></div></div>
+      </div>
+
+      <div class="skill-card reveal">
+        <div class="skill-icon">📋</div>
+        <h4>Test &amp; Defect Mgmt</h4>
+        <div class="skill-pills">
+          <span>JIRA</span><span>X-ray</span><span>Confluence</span><span>StarTeam</span><span>Zendesk</span>
+        </div>
+        <div class="skill-meter"><div class="skill-fill" data-pct="90"></div></div>
+      </div>
+
+      <div class="skill-card reveal">
+        <div class="skill-icon">🔧</div>
+        <h4>Utilities &amp; Tools</h4>
+        <div class="skill-pills">
+          <span>Kafka</span><span>Redis Insight</span><span>Pc-SPAN</span><span>Beyond Compare</span><span>Total Commander</span><span>MS Office</span>
+        </div>
+        <div class="skill-meter"><div class="skill-fill" data-pct="85"></div></div>
+      </div>
+
+      <div class="skill-card reveal">
+        <div class="skill-icon">📈</div>
+        <h4>Trading Workstations</h4>
+        <div class="skill-pills">
+          <span>ODIN</span><span>Wave</span><span>Breeze</span><span>ARMS</span>
+        </div>
+        <div class="skill-meter"><div class="skill-fill" data-pct="88"></div></div>
+      </div>
+
+      <div class="skill-card reveal">
+        <div class="skill-icon">🔄</div>
+        <h4>Methodology</h4>
+        <div class="skill-pills">
+          <span>Agile/Scrum</span><span>Waterfall</span><span>SDLC</span><span>STLC</span><span>Sprint Ceremonies</span><span>Defect Life Cycle</span>
+        </div>
+        <div class="skill-meter"><div class="skill-fill" data-pct="94"></div></div>
+      </div>
+
+      <div class="skill-card reveal">
+        <div class="skill-icon">📱</div>
+        <h4>Platforms Tested</h4>
+        <div class="skill-pills">
+          <span>Web App</span><span>Desktop</span><span>Android</span><span>iOS</span><span>Cross-Browser</span>
+        </div>
+        <div class="skill-meter"><div class="skill-fill" data-pct="90"></div></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ░░░░░░░░░░ CERTIFICATIONS ░░░░░░░░░░ -->
+  <section class="content-section" id="certs">
+    <div class="sec-head reveal">
+      <span class="sec-num">03</span>
+      <h2 class="sec-title">Certifications</h2>
+      <span class="sec-rule"></span>
+    </div>
+    <div class="certs-grid">
+
+      <div class="cert-card reveal">
+        <div class="cert-glow"></div>
+        <div class="cert-badge">🏆</div>
+        <div class="cert-info">
+          <h4>ISTQB Certified Tester Foundation Level</h4>
+          <span class="cert-acronym">CTFL</span>
+          <p class="cert-date">Issued: 05 Feb 2023</p>
+        </div>
+        <div class="cert-ribbon"></div>
+      </div>
+
+      <div class="cert-card reveal">
+        <div class="cert-glow"></div>
+        <div class="cert-badge">🚀</div>
+        <div class="cert-info">
+          <h4>Postman API Fundamentals</h4>
+          <span class="cert-acronym">Student Expert</span>
+          <p class="cert-date">Issued: 28 Nov 2024</p>
+        </div>
+        <div class="cert-ribbon"></div>
+      </div>
+
+      <div class="cert-card reveal">
+        <div class="cert-glow"></div>
+        <div class="cert-badge">⚡</div>
+        <div class="cert-info">
+          <h4>Redis Insight</h4>
+          <span class="cert-acronym">Certified</span>
+          <p class="cert-date">Issued: 14 Mar 2025</p>
+        </div>
+        <div class="cert-ribbon"></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ░░░░░░░░░░ EDUCATION ░░░░░░░░░░ -->
+  <section class="content-section alt-bg" id="education">
+    <div class="sec-head reveal">
+      <span class="sec-num">04</span>
+      <h2 class="sec-title">Education</h2>
+      <span class="sec-rule"></span>
+    </div>
+    <div class="edu-grid">
+
+      <div class="edu-card reveal" data-status="pursuing">
+        <div class="edu-top">
+          <span class="edu-degree">MBA</span>
+          <span class="edu-tag pursuing">Pursuing</span>
+        </div>
+        <p class="edu-inst">Manipal University, Sikkim</p>
+        <p class="edu-year">Expected 2027</p>
+      </div>
+
+      <div class="edu-card reveal">
+        <div class="edu-top">
+          <span class="edu-degree">B.Com</span>
+          <span class="edu-tag grade">Grade: A</span>
+        </div>
+        <p class="edu-inst">Bhavan's College — Mumbai University</p>
+        <p class="edu-year">March 2017</p>
+      </div>
+
+      <div class="edu-card reveal">
+        <div class="edu-top">
+          <span class="edu-degree">HSC</span>
+          <span class="edu-tag score">75%</span>
+        </div>
+        <p class="edu-inst">Bhavan's College — Maharashtra State Board</p>
+        <p class="edu-year">February 2014</p>
+      </div>
+
+      <div class="edu-card reveal">
+        <div class="edu-top">
+          <span class="edu-degree">SSC</span>
+          <span class="edu-tag score">78%</span>
+        </div>
+        <p class="edu-inst">Green Land High School — Maharashtra State Board</p>
+        <p class="edu-year">March 2012</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ░░░░░░░░░░ PROFILE & STRENGTHS ░░░░░░░░░░ -->
+  <section class="content-section" id="profile">
+    <div class="sec-head reveal">
+      <span class="sec-num">05</span>
+      <h2 class="sec-title">Profile &amp; Strengths</h2>
+      <span class="sec-rule"></span>
+    </div>
+
+    <div class="profile-summary reveal">
+      <p>QA professional with <strong>7+ years of experience</strong> in Manual and Automation Testing, specialising in <strong>Ecommerce platforms</strong> and <strong>Capital Markets Risk Management Systems</strong>. Strong expertise in functional, regression, integration, API, Database and UAT testing with hands-on experience in Agile/Scrum environments. Proven ability to collaborate with cross-functional teams, maintain test beds, handle production issues and ensure high-quality releases in fast-paced domains.</p>
+    </div>
+
+    <div class="strengths-grid">
+      <div class="strength-item reveal"><span class="s-num">01</span><p>7+ years across Mobile (Android, iOS), Web-based and Desktop application testing.</p></div>
+      <div class="strength-item reveal"><span class="s-num">02</span><p>Skilled in Functional, Regression, Smoke, Sanity, API and Database testing across all STLC phases.</p></div>
+      <div class="strength-item reveal"><span class="s-num">03</span><p>Well-versed with SDLC, STLC, Defect Life Cycle, Waterfall and Agile/Scrum methodologies.</p></div>
+      <div class="strength-item reveal"><span class="s-num">04</span><p>Expert in cross-functional coordination with Dev, BA, PMT and Support teams.</p></div>
+      <div class="strength-item reveal"><span class="s-num">05</span><p>Strong in reviewing and writing test documentation: scenarios, cases and bug reports.</p></div>
+      <div class="strength-item reveal"><span class="s-num">06</span><p>Detecting bugs, analysing root causes, classifying by Severity and Priority.</p></div>
+      <div class="strength-item reveal"><span class="s-num">07</span><p>Planned and coordinated release activities, ensuring timely and smooth deployments.</p></div>
+      <div class="strength-item reveal"><span class="s-num">08</span><p>Good knowledge of Testing Activities, Techniques, Levels, Types and Test Bed Maintenance.</p></div>
+    </div>
+
+    <div class="lang-section reveal">
+      <h3 class="lang-title">Languages Known</h3>
+      <div class="lang-row">
+        <div class="lang-pill">English</div>
+        <div class="lang-pill">Marathi</div>
+        <div class="lang-pill">Hindi</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░░░░░░░░░ FOOTER ░░░░░░░░░░ -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">OP<span>://</span>QA</div>
+      <p class="footer-name">Omkar Pasilkar — Senior QA Engineer</p>
+      <p class="footer-contact">
+        pasilkaromkar@gmail.com &nbsp;·&nbsp; +91-9833104033 &nbsp;·&nbsp; Goregaon W, Mumbai – 400104
+      </p>
+      <p class="footer-note">Certified ISTQB® CTFL &nbsp;·&nbsp; Postman API Expert &nbsp;·&nbsp; Redis Insight Certified</p>
+      <p class="footer-hint">🐛 Click the bugs to squash them!</p>
+    </div>
+  </footer>
+
+  <script src="js/bugs.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- ░░ CHATBOT WIDGET ░░ -->
+
+  <!-- Floating Toggle Button -->
+  <button class="chat-fab" id="chatFab" aria-label="Open chat">
+    <span class="chat-fab-icon open-icon">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+      </svg>
+    </span>
+    <span class="chat-fab-icon close-icon" style="display:none;">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+        <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+      </svg>
+    </span>
+    <span class="chat-fab-badge" id="chatBadge">1</span>
+    <span class="chat-fab-ring"></span>
+  </button>
+
+  <!-- Chat Window -->
+  <div class="chat-window" id="chatWindow" aria-hidden="true">
+
+    <!-- Header -->
+    <div class="chat-header">
+      <div class="chat-header-avatar">
+        <span>OP</span>
+        <span class="chat-online-dot"></span>
+      </div>
+      <div class="chat-header-info">
+        <p class="chat-header-name">Omkar Pasilkar</p>
+        <p class="chat-header-status">Senior QA Engineer · Typically replies instantly</p>
+      </div>
+      <button class="chat-header-close" id="chatClose" aria-label="Close chat">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+          <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Messages -->
+    <div class="chat-messages" id="chatMessages">
+      <!-- Messages injected by JS -->
+    </div>
+
+    <!-- Quick Reply Chips -->
+    <div class="chat-chips" id="chatChips"></div>
+
+    <!-- Input Row -->
+    <div class="chat-input-row">
+      <input
+        type="text"
+        class="chat-input"
+        id="chatInput"
+        placeholder="Type a message…"
+        autocomplete="off"
+        maxlength="200"
+      />
+      <button class="chat-send" id="chatSend" aria-label="Send">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- WhatsApp CTA -->
+    <div class="chat-wa-bar" id="chatWaBar" style="display:none;">
+      <button class="chat-wa-btn" id="chatWaBtn">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/>
+        </svg>
+        Continue on WhatsApp
+      </button>
+      <p class="chat-wa-note">Opens WhatsApp with your message pre-filled</p>
+    </div>
+
+    <div class="chat-footer-note">Powered by WhatsApp · End-to-end encrypted</div>
+  </div>
+
+  <script src="js/chatbot.js"></script>
+</body>
+</html>
